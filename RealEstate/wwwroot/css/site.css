@@ -6,7 +6,12 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
 }
-
+@font-face {
+    font-family: 'Noto Sans Khmer';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/NotoSansKhmer-Regular.ttf");
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -46,6 +51,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    font-family: "Noto Sans Khmer";
 }
 
 .footer {
@@ -57,3 +63,21 @@ body {
     height: 60px;
     line-height: 60px; /* Vertically center the text there */
 }
+
+/* image */
+.thumb-md-height    { height: 120px; }
+.thumb-sm-height    { height: 60px; }
+.thumb-xs-height    { height: 30px; }
+
+/* Listing */
+.listing-list .rate { position: absolute; bottom: 10px; right: 10px;}
+
+/* fonts */
+.font-12            { font-size: 12px; }
+.font-14            { font-size: 14px; }
+.font-16            { font-size: 16px; }
+.font-18            { font-size: 18px; }
+.font-20            { font-size: 20px; }
+.font-22            { font-size: 22px; }
+.font-24            { font-size: 24px; }
+.font-26            { font-size: 26px; }

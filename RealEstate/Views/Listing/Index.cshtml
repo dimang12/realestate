@@ -1,0 +1,46 @@
+@using System.Collections
+@{
+    var listings = ViewData["listings"];
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb bg-transparent pl-0 pr-0 font-14">
+                <li class="breadcrumb-item"><a href="#"> <i class="icon-cup mr-1"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Listing</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @{
+                foreach (var listing in (IEnumerable<Listing>) listings)
+                {
+                    <tr>
+                        <th scope="row">#@listing.ListingId</th>
+                        <td>
+                            <div class="thumb-xs-height" style="background:url(/img/thumb/@listing.Image); background-position: center; background-size: cover;"></div>
+                        </td>
+                        <td>$ @listing.Price</td>
+                        <td>@listing.Address</td>
+                        <td>
+                            <a href="/listing/editlisting/@listing.ListingId" class="btn-edit-listing-"> <i class="icon-pen"></i> </a>
+                            <a href="/listing/editlisting/@listing.ListingId" class="btn-remove-listing"> <i class="icon-trash"></i> </a>
+                        </td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -16,10 +16,11 @@
                   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
         </environment>
         <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/icon.css" />
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RealEstate</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -39,7 +40,7 @@
                 </div>
             </nav>
         </header>
-        <div class="container">
+        <div class="container-fluid @ViewData["bg_color"]">
             <partial name="_CookieConsentPartial" />
             <main role="main" class="pb-3">
                 @RenderBody()
@@ -71,7 +72,17 @@
             </script>
         </environment>
         <script src="~/js/site.js" asp-append-version="true"></script>
-
+        <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgI_xAkoRj27va1wZc2kaTUdJarbS7ifQ&callback=initMap"
+        async defer></script>
         @RenderSection("Scripts", required: false)
     </body>
 </html>

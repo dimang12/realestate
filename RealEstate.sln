@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate", "RealEstate\RealEstate.csproj", "{77730FD4-D542-42A0-93BA-30699F112AD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.DataAccess", "RealEstate.DataAccess\RealEstate.DataAccess.csproj", "{5682CF30-6457-4D8F-B29B-AA6855C0997C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhollyCity", "WhollyCity\WhollyCity.csproj", "{61CA4640-F0D5-4FCA-88EA-5B38283F2F0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{77730FD4-D542-42A0-93BA-30699F112AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77730FD4-D542-42A0-93BA-30699F112AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77730FD4-D542-42A0-93BA-30699F112AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5682CF30-6457-4D8F-B29B-AA6855C0997C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5682CF30-6457-4D8F-B29B-AA6855C0997C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5682CF30-6457-4D8F-B29B-AA6855C0997C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5682CF30-6457-4D8F-B29B-AA6855C0997C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61CA4640-F0D5-4FCA-88EA-5B38283F2F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61CA4640-F0D5-4FCA-88EA-5B38283F2F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61CA4640-F0D5-4FCA-88EA-5B38283F2F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61CA4640-F0D5-4FCA-88EA-5B38283F2F0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
